@@ -13,5 +13,13 @@ var playState = {
 
   },
   update: function() {
+      var self = this;
+      if (game.input.activePointer.isDown) {
+          if (game.input.x < self.player.x) {
+              self.player.body.velocity.x -= 10;
+          } else if (game.input.x > self.player.x) {
+              self.player.body.velocity.x += 10;
+          }
+      }
   }
 };
