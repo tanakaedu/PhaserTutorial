@@ -1,3 +1,4 @@
 /js/vendor/phaser.js
 /node_modules
 **/.DS_Store
+/assets/sprites/dude.png
